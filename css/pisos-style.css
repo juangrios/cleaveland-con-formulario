@@ -1,0 +1,26 @@
+
+
+.tarjetas{
+    width: 70%;
+    display: inline-block;
+    margin: 90px auto;
+}
+
+.tarjetas > p{
+  text-align: center;
+  font-size: 250%;
+  font-weight: bold;
+  font-family: Merriweather;
+
+}
+.card img{
+  width: 100%;
+  height: 50%;
+}
+
+.card{
+  margin-bottom: 20px
+}
+.tarjetas > p{
+        font-size: 200%;
+     }

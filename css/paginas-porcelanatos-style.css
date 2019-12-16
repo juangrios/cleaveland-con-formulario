@@ -1,0 +1,141 @@
+body{
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	
+}
+.contenedor{
+	position: relative;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin-top: 50px;
+	width: 100%;
+	z-index: 10;
+	flex-direction: row-reverse;
+}
+.carrusel{
+	width: 55%;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.carousel-thumbnails .carousel-indicators>li {
+    width: initial;
+    height: initial;
+    text-indent: initial;
+}
+.carousel .carousel-indicators li {
+    cursor: pointer;
+    border-radius: 50%;
+}
+.carousel-indicators > li > img{
+	border: 1px solid grey;
+}
+.carousel-item > img {
+	border: 1px solid grey;
+}
+.carousel-thumbnails .carousel-indicators {
+    position: static;
+    left: initial;
+    width: initial;
+    margin-right: initial;
+    margin-left: initial;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.carousel-item > img{
+	max-height: 476px;
+	object-fit: cover;
+}
+/*--------------------detalles-------------------*/
+.detalles{
+	width: 45%;
+	padding: 0 20px;
+}
+.detalles > div{
+	width: 400px;
+	height: 150px;
+	margin: auto;
+	background-image: url(../imagenes/cartelmadera2.jpg) !important;
+	background-size: cover;
+	background-position: bottom;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	margin-bottom: 30px;
+}
+
+.detalles > div > h1{
+	text-align: center;
+	margin-bottom: 20px;
+	color: #f4f4f4;
+	font-weight: 600;
+	text-shadow: 0.5px 0 black;
+}
+.precio{
+	margin: 20px 0;
+}
+.detalles > h5{
+	font-weight: 600;
+	text-shadow: 0.5px 0 black;
+}
+.detalles > h5 > span{
+	color: #000065;
+}
+
+.cuadrados-fondo{
+	position: fixed;
+	bottom: -40px;
+	right: -40px;
+	transform: rotateZ(-45deg);
+	width: 350px;
+	z-index: -1;
+	opacity: 0.3;
+}
+@media (max-width: 960px){
+	.contenedor{
+		flex-direction: column;
+	}
+	.detalles{
+		width: 100%;
+		position: relative;
+		overflow: hidden;
+		padding-bottom: 30px;
+	}
+	.carrusel{
+		padding-top: 0;
+		width: 100%;
+	}
+	.cuadrados-fondo{
+		position: absolute;
+		bottom: 10px;
+		right: 0px;
+		transform: rotateZ(-45deg);
+		width: 350px;
+
+	}
+	.detalles > h5{
+		margin-left: 7%;
+	}
+}
+@media (max-width: 576px){
+	.cuadrados-fondo{
+		opacity: 0.15;
+	}
+	.detalles > div{
+		width: 275px;
+		height: 100px;
+		margin-bottom: 20px;
+	}
+
+	.detalles > div > h1{
+		font-size: 30px;
+		margin-bottom: 14px;
+	}
+}
